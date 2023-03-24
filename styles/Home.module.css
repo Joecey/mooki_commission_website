@@ -7,8 +7,9 @@
   align-items: center;
 }
 
+/* anytime you have a title with A */
 .title a {
-  color: #0070f3;
+  color: #f95acc;
   text-decoration: none;
 }
 
@@ -64,8 +65,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #ff8ec6;
+  border-color: #ff76bf;
 }
 
 .card h3 {
