@@ -1,7 +1,8 @@
 import "./globals.css";
 
 // use this to create our nav bar
-import Link from "next/link";
+
+import Navbar from "../components/navbar";
 
 export const metadata = {
 	title: "Mooki Portfolio and Comissions",
@@ -13,12 +14,8 @@ export default function RootLayout({ children }) {
 		<html>
 			<body>
 				<main>
-					<nav>
-						<Link href="/">Portfolio</Link>
-						<Link href="/instagram">Instagram</Link>
-						<Link href="/about">About</Link>
-						<Link href="/commission">Commission</Link>
-					</nav>
+					<Navbar />
+
 					{/* display children of the directory this is in (except subdirs) */}
 					{children}
 				</main>
