@@ -5,12 +5,15 @@ import Link from "next/link";
 
 export default function Navbar() {
 	return (
-		<nav>
-			<Link href="/">Portfolio</Link>
-			<Link href="/instagram">Instagram</Link>
-			<Link href="/about">About</Link>
-			<Link href="/commission">Commission</Link>
-		</nav>
+		<div id="navbar">
+			{/* <h1>Hello, I'm Mooki</h1> */}
+			<nav>
+				<Link href="/">Portfolio</Link>
+				<Link href="/instagram">Instagram</Link>
+				<Link href="/about">About</Link>
+				<Link href="/commission">Commission</Link>
+			</nav>
+		</div>
 	);
 }
 

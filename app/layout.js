@@ -15,6 +15,9 @@ export default function RootLayout({ children }) {
 		<html>
 			<body>
 				<main>
+					<div id="main_title">
+						<h1>Mooki</h1>
+					</div>
 					<Navbar />
 
 					{/* display children of the directory this is in (except subdirs) */}

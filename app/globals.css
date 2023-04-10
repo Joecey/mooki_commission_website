@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Raleway:wght@300&display=swap");
 
+:root {
+	--main_pink: #b7838e;
+	--hover_pink: #803054;
+	--font_colour: white;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -8,25 +14,34 @@ html,
 body {
 	padding: 0;
 	margin: 0;
+	background-color: var(--main_pink);
 	/* list font priority */
 	font-family: "Raleway", sans-serif, BlinkMacSystemFont, Segoe UI, Roboto,
 		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
 		sans-serif;
-	padding: 0 2rem;
+	padding: 0 0rem;
+}
+
+#main_title {
+	padding: 0 0;
+	text-transform: uppercase;
+	
 }
 
 h1 {
 	text-align: center;
-	font-size: 4rem;
+	font-size: 3rem;
+	color: var(--font_colour);
 }
 
 p {
 	text-align: center;
 	font-size: 2rem;
+	color: var(--font_colour);
 }
 
 a {
-	color: inherit;
+	color: var(--font_colour);
 	text-decoration: none;
 	padding: 0;
 	margin: 0;
@@ -48,19 +63,20 @@ textarea {
 	margin: 0.5rem 0;
 }
 
-button {
-	background-color: #000000;
-	border: none;
-	color: white;
-	padding: 0.5rem 2rem;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	cursor: pointer;
-}
-
 nav a {
+	/* background-color: var(--main_pink); */
 	font-weight: bold;
 	margin: 0 0.5rem;
-	text-decoration: underline;
+	/* text-decoration: underline; */
+	text-transform: uppercase;
+}
+
+#navbar {
+	/* background-color: var(--main_pink); */
+	/* width: 100%; */
+	height: 3vh;
+}
+
+nav a:hover {
+	color: var(--hover_pink);
 }
