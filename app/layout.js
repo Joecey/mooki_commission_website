@@ -9,6 +9,7 @@ export const metadata = {
 	description: "Mooki's Personal Portfolio Website and Commissions Page",
 };
 
+// export nav bar here
 export default function RootLayout({ children }) {
 	return (
 		<html>
