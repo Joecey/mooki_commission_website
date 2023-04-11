@@ -1,0 +1,12 @@
+.port_image {
+	width: 580px;
+	aspect-ratio: 1 / 1;
+}
+
+.line {
+    /* TODO need to create a span tag for width */
+	width: 20vw;
+	height: 1px;
+	border: 1px solid rgb(255, 255, 255);
+	margin: 1rem;
+}

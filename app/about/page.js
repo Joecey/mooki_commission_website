@@ -1,7 +1,7 @@
 export default function AboutPage() {
 	return (
 		<div>
-			<h1>Hey there!</h1>
+			<p>Hey there!</p>
 			<p>
 				My name is Harley and I'm a digital artist currently studying
 				Concept art, environment art and character art at university!

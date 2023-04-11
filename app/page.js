@@ -1,8 +1,12 @@
+"use client";
+
+import StandardImageList from "../components/port_images";
+
 export default function HomePage() {
 	return (
-		<div>
-			<p>Portfolio page</p>
-			<p>Portfolio showcase and commissions</p>
-		</div>
+		// create a react fragment as shown so you can add mutliple child divs for export
+		<>
+			<StandardImageList />
+		</>
 	);
 }
