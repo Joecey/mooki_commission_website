@@ -3,7 +3,7 @@ import "./globals.css";
 // use this to create our nav bar
 
 import Navbar from "../components/navbar";
-import Line from "../components/line";
+// import Line from "../components/navbar";
 
 export const metadata = {
 	title: "Mooki Portfolio and Comissions",
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
 						<h1>Mooki</h1>
 					</div>
 					<Navbar />
-					<Line />
+					
 
 					{/* display children of the directory this is in (except subdirs) */}
 					{children}
