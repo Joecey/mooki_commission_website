@@ -37,7 +37,7 @@ h1 {
 
 h2 {
 	text-align: center;
-	font-size: 3rem;
+	font-size: 2.3rem;
 	font-family: "Cabin", sans-serif;
 	color: var(--font_colour);
 	margin-top: 2rem;
@@ -46,7 +46,7 @@ h2 {
 
 p {
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.1rem;
 	color: var(--font_colour);
 }
 

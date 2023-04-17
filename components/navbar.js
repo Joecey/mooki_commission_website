@@ -14,9 +14,9 @@ export default function Navbar() {
 				{/* <h1>Hello, I'm Mooki</h1> */}
 				<nav>
 					<Link href="/">Portfolio</Link>
+					<Link href="/commission">Commissions</Link>
 					<Link href="/instagram">Instagram</Link>
 					<Link href="/about">About</Link>
-					<Link href="/commission">Commission</Link>
 				</nav>
 			</div>
 			<Line />

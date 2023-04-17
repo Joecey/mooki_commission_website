@@ -1,0 +1,29 @@
+.text-image {
+	width: 400px;
+	height: auto;
+	aspect-ratio: 1 / 1;
+	padding: 1.5rem;
+}
+
+.intro-flex {
+	margin-left: 20%;
+	margin-right: 20%;
+	/* background-color: green; */
+	/* width: 70%; */
+	/* create a flex box */
+	display: flex;
+}
+
+.description {
+	position: relative;
+	top: 0.6rem;
+	padding-right: 2rem;
+}
+
+.description > h2 {
+	text-align: left;
+}
+
+.description > p {
+	text-align: left;
+}
