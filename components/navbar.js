@@ -26,7 +26,7 @@ export default function Navbar() {
 
 // line function
 function Line() {
-	return <div class="line"></div>;
+	return <div className="line"></div>;
 }
 
 // export default Navbar;

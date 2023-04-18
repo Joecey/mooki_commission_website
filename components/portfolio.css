@@ -4,9 +4,19 @@
 }
 
 .line {
-    /* TODO need to create a span tag for width */
+	/* TODO need to create a span tag for width */
 	width: 20vw;
 	height: 1px;
 	border: 1px solid rgb(255, 255, 255);
 	margin: 1rem;
+}
+
+.footer {
+	position: absolute;
+	display: flex;
+	bottom: 10%;
+}
+
+.footer > p {
+	font-size: 0.8rem;
 }
