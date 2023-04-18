@@ -12,9 +12,7 @@
 }
 
 .footer {
-	position: absolute;
-	display: flex;
-	bottom: 10%;
+	margin-top: auto;
 }
 
 .footer > p {
