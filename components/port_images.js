@@ -12,10 +12,10 @@ import "./portfolio.css";
 export default function StandardImageList() {
 	return (
 		<ImageList
-			sx={{ width: 700, height: 800 }}
+			sx={{ width: 700, height: 2000 }}
 			cols={3}
 			rows={5}
-			rowHeight={300}
+			rowHeight={`auto`}
 		>
 			{itemData.map((item) => (
 				<ImageListItem key={item.img}>
