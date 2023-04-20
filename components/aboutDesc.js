@@ -21,16 +21,16 @@ export default function AboutDesc() {
 					to life using digital tools and software. Now, I am studying
 					these skills at university to further refine my craft. With
 					a
-					<u>
+					<strong>
 						{" "}
 						Level 3 diploma in Graphics, Illustration and Game Art
-					</u>{" "}
+					</strong>{" "}
 					under my belt, earned after graduating college in 2022, I am
 					equipped with the skills to bring your wildest artistic
 					visions to life using the latest digital technologies!
 					<br></br>
 					<br></br>
-					Let's talk! <strong>harlzeyyy@gmail.com</strong>
+					Contact me! <strong>harlzeyyy@gmail.com</strong>
 				</p>
 			</div>
 		</div>
