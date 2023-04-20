@@ -1,0 +1,37 @@
+.grid_container {
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+}
+
+.grid_port {
+	display: grid;
+	gap: 1rem;
+	width: 60vw;
+	/* now make the grid auto fit 3 columns */
+	grid-template-columns: repeat(auto-fit, minmax(max(240px, 15vw), 3fr));
+	grid-auto-rows: max(240px, 15vw);
+}
+
+/* basic card template */
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	/* padding: 20px; */
+	box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	border: 0;
+	background-color: white;
+}
+
+.port_image {
+	width: 100%; /* or any custom size */
+	height: 100%;
+	object-fit: cover;
+}

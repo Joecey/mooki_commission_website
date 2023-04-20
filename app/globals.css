@@ -26,7 +26,11 @@ body {
 
 #main_title {
 	padding: 0 0;
+	width: 100vw;
 	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 h1 {
@@ -87,8 +91,11 @@ nav a {
 
 #navbar {
 	/* background-color: var(--main_pink); */
-	/* width: 100%; */
+	width: 100vw;
 	height: 3vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 nav a:hover {

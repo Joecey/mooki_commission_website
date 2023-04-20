@@ -1,33 +1,43 @@
 "use client";
 
 import React, { Component } from "react";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-
+import Image from "next/image";
+import MOOKI from "../assets/images/mooki-intro.png";
 import "./portfolio.css";
+import "./imageGrid.css";
 
 // TODO 19/4/23 need to replace this with a grid box cus image list is dogshit
 
 // ? There is an inner scroll??? why - will probably switch to grid box
+// * 20/4/23 changing this to a grid box
+
+// need to use loader for external images
+const imageLoader = ({ src, width, quality }) => {
+	// provide quality or default to 75%
+	return `${src}?w=${width}&q=${quality || 75}`;
+};
+
 export default function StandardImageList() {
 	return (
-		<ImageList
-			sx={{ width: 700, height: 2000 }}
-			cols={3}
-			rows={5}
-			rowHeight={`auto`}
-		>
-			{itemData.map((item) => (
-				<ImageListItem key={item.img}>
-					<img
-						src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-						srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-						alt={item.title}
-						loading="lazy"
-					/>
-				</ImageListItem>
-			))}
-		</ImageList>
+		<div className="grid_container">
+			<div className="grid_port">
+				{/* map item list here  */}
+				{itemData.map((item) => (
+					<div className="card">
+						<Image
+							// needed to add image loader here
+							loader={imageLoader}
+							className="port_image"
+							// remember to include website in next.config.js
+							src={item.img}
+							width={500}
+							height={500}
+							alt={item.title}
+						/>
+					</div>
+				))}
+			</div>
+		</div>
 	);
 }
 
