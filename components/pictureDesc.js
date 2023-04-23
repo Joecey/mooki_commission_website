@@ -1,6 +1,6 @@
 // `use client`;
 import React from "react";
-import "./descriptions.css";
+import "./styles/descriptions.css";
 import Image from "next/image";
 import DESCRIPTIONIMAGE from "../assets/images/dogpng.png";
 

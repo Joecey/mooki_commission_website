@@ -1,5 +1,5 @@
 .line {
-	/* TODO need to create a span tag for width */
+	/* TODO need to create a clamp tag for width */
 	width: clamp(10rem, 20vw, 30rem);
 	height: 1px;
 	border: 1px solid rgb(255, 255, 255);

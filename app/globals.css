@@ -5,6 +5,7 @@
 	--main_pink: #b7838e;
 	--hover_pink: #803054;
 	--font_colour: white;
+	--card_colour: #eeb6b6;
 }
 
 * {
@@ -46,6 +47,15 @@ h2 {
 	font-family: "Cabin", sans-serif;
 	color: var(--font_colour);
 	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+h3 {
+	text-align: center;
+	font-size: 1.6rem;
+
+	color: var(--hover_pink);
+	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
 

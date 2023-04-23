@@ -3,8 +3,8 @@
 import React, { Component } from "react";
 import Image from "next/image";
 import MOOKI from "../assets/images/mooki-intro.png";
-import "./portfolio.css";
-import "./imageGrid.css";
+import "./styles/portfolio.css";
+import "./styles/imageGrid.css";
 
 // TODO 19/4/23 need to replace this with a grid box cus image list is dogshit
 

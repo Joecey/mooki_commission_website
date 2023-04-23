@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import Link from "next/link";
 
-import "./portfolio.css";
+import "./styles/portfolio.css";
 
 // navbar function
 export default function Navbar() {
