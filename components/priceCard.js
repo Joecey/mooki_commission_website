@@ -11,7 +11,7 @@ export default function PriceCard() {
 	return (
 		<div className="price_card_container">
 			<div className="price_card_box">
-				<Image src={PENCIL} width={60} height={60} alt="test" />
+				<Image src={PENCIL} className="price_card_sketch" alt="test" />
 				<div>
 					<h3>
 						<strong>Sketch</strong>

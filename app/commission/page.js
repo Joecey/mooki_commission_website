@@ -5,6 +5,7 @@ export default function CommissionPage() {
 	return (
 		<>
 			<PriceCard />
+
 			{/* <PictureDesc /> */}
 		</>
 	);

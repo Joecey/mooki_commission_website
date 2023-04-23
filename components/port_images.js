@@ -1,5 +1,3 @@
-"use client";
-
 import React, { Component } from "react";
 import Image from "next/image";
 import MOOKI from "../assets/images/mooki-intro.png";
@@ -18,16 +16,26 @@ const imageLoader = ({ src, width, quality }) => {
 };
 
 export default function StandardImageList() {
+	const random_fade = ["fade-in-1", "fade-in-2", "fade-in-3", "fade-in-4"];
+
 	return (
 		<div className="grid_container">
 			<div className="grid_port">
 				{/* map item list here  */}
 				{itemData.map((item) => (
-					<div className="card">
+					<div
+						className={
+							"card" +
+							" " +
+							random_fade[
+								Math.floor(Math.random() * random_fade.length)
+							]
+						}
+					>
 						<Image
 							// needed to add image loader here
 							loader={imageLoader}
-							className="port_image"
+							className={"port_image"}
 							// remember to include website in next.config.js
 							src={item.img}
 							width={500}

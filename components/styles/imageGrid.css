@@ -28,10 +28,48 @@
 	border-radius: 3px;
 	border: 0;
 	background-color: white;
+	transition: all 200ms ease-in-out;
+}
+
+.card:hover {
+	scale: 1.05;
+	border-radius: 20px;
+}
+
+.card:hover .port_image {
+	border-radius: 20px;
 }
 
 .port_image {
 	width: 100%; /* or any custom size */
 	height: 100%;
 	object-fit: cover;
+	overflow: hidden;
+	border-radius: 3px;
+	transition: all 200ms ease-in-out;
+}
+
+.fade-in-1 {
+	animation: fadeIn 1s ease-in-out;
+}
+
+.fade-in-2 {
+	animation: fadeIn 1.4s ease-in-out;
+}
+
+.fade-in-3 {
+	animation: fadeIn 1.8s ease-in-out;
+}
+
+.fade-in-4 {
+	animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

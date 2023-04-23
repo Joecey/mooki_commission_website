@@ -13,6 +13,28 @@
 	user-select: none;
 }
 
+/* use for fading in elements */
+.fade-in-shorter {
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+.fade-in-short {
+	animation: fadeIn 1s ease-in-out;
+}
+
+.fade-in {
+	animation: fadeIn 1.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 html,
 body {
 	padding: 0;
