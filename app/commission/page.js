@@ -1,12 +1,18 @@
-import PictureDesc from "../../components/pictureDesc";
 import PriceCard from "../../components/priceCard";
+import "../../components/styles/commissions.css";
 
 export default function CommissionPage() {
 	return (
-		<>
-			<PriceCard />
+		<div>
+			<h4>
+				Before discussing a commission, please refer to my Terms of
+				Service!
+			</h4>
 
-			{/* <PictureDesc /> */}
-		</>
+			<div className="price-cards-group">
+				<PriceCard />
+				<PriceCard />
+			</div>
+		</div>
 	);
 }

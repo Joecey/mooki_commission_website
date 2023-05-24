@@ -1,23 +1,25 @@
 import React from "react";
 import Image from "next/image";
 import "./styles/commissions.css";
-
-import PENCIL from "../assets/commission/icons8-pencil-100.png";
+import EXAMPLE from "../public/example_art.jpg";
 
 // have a props object to take in 1) product name, 2) descriptions and prices
-export default function PriceCard() {
+export default function PriceCard(props) {
 	// get mouse movement when hovering over price_card_container class
 
 	return (
 		<div className="price_card_container">
+			<Image
+				src={EXAMPLE}
+				width={500}
+				height={500}
+				alt="Example image"
+				className="commission_image"
+			/>
+			<div className="overlay"></div>
+			<h3 className="title-banner">Title</h3>
+
 			<div className="price_card_box">
-				<Image src={PENCIL} className="price_card_sketch" alt="test" />
-				<div>
-					<h3>
-						<strong>Sketch</strong>
-					</h3>
-				</div>
-				<div className="price_line"></div>
 				<div className="price_tags">
 					<p>
 						Headshot: £15 ($18) <br></br>Waist up: £25 ($30){" "}

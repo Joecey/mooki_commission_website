@@ -1,4 +1,8 @@
 /* basic card template */
+:root {
+	--image-border: 20px;
+}
+
 .price_card_container {
 	/* add circle gradien */
 	background: radial-gradient(
@@ -6,19 +10,31 @@
 		rgba(171, 40, 0, 0.325),
 		transparent 60%
 	);
-	z-index: 3;
-
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 	height: 300px;
-	width: 230px;
+	width: 525px;
 	/* padding: 20px; */
-	margin-top: 10px;
+	margin-top: 1rem;
+
+	margin-left: 1rem;
+	margin-right: 1rem;
 	box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
-	border-radius: 20px;
+	border-radius: var(--image-border);
 
 	border-width: 3px;
 	border-style: none;
 	border-color: var(--hover_pink);
 	background-color: var(--card_colour);
+
+	/* background-color: red; */
+}
+
+.price-cards-group {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
 }
 
 .price_card_sketch {
@@ -28,29 +44,64 @@
 	transition: all 400ms ease-in-out;
 }
 
-.price_line {
-	width: 100px;
-	height: 1px;
-	border: 1px solid var(--hover_pink);
-	transition: all 400ms ease-in-out;
-	/* margin: -0.2rem; */
+.price-card_container:hover .commission_image {
+	filter: blur(3px);
+	-webkit-transition: 400ms ease 100ms;
+	-moz-transition: 400ms ease 100ms;
+	transition: 400ms ease 100ms;
 }
 
-.price_card_container:hover .price_line {
-	width: 160px;
+.price_card_container:hover .price_tags {
+	visibility: visible;
 }
 
-.price_card_container:hover .price_card_sketch {
-	scale: 1.3;
+.price_card_container:hover .title-banner {
+	opacity: 0%;
+}
+
+.commission_image {
+	filter: blur(0px);
+	-webkit-filter: blur(0px);
+	position: relative;
+	width: 100%; /* or any custom size */
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: var(--image-border);
+}
+
+.title-banner {
+	width: 70%;
+	opacity: 100%;
+	text-align: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+	overflow: hidden;
+	color: white;
+	/* object-fit: cover; */
+	margin-top: -3rem;
+	transition: all ease-in-out;
+	transition-duration: 200ms;
+
+	background-color: var(--hover_pink);
 }
 
 .price_card_box {
+	/* background-color: red; */
+	position: relative;
+	margin-top: -13rem;
+	align-items: center;
+	/* height: 100%; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	padding-top: 3.2rem;
 	z-index: 2;
+}
+
+.price_tags {
+	visibility: hidden;
 }
 
 .price_tags > p {
