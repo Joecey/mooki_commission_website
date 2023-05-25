@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+"use client";
+
+import React from "react";
 import Image from "next/image";
-import MOOKI from "../assets/images/mooki-intro.png";
 import "./styles/portfolio.css";
 import "./styles/imageGrid.css";
 

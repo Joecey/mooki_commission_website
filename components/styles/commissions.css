@@ -1,21 +1,35 @@
 /* basic card template */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 :root {
-	--image-border: 20px;
+	--image-border: 0px;
+}
+.fade-in {
+	animation: fadeIn 1s ease-in;
+}
+
+.fade-in-alt {
+	animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .price_card_container {
 	/* add circle gradien */
-	background: radial-gradient(
-		450px circle at 50px 50px,
-		rgba(171, 40, 0, 0.325),
-		transparent 60%
-	);
+	position: relative;
 	display: flex;
-	align-items: center;
 	flex-direction: column;
+	justify-content: center;
+
+	align-items: center;
 	height: 300px;
 	width: 525px;
-	/* padding: 20px; */
 	margin-top: 1rem;
 
 	margin-left: 1rem;
@@ -26,7 +40,6 @@
 	border-width: 3px;
 	border-style: none;
 	border-color: var(--hover_pink);
-	background-color: var(--card_colour);
 
 	/* background-color: red; */
 }
@@ -37,20 +50,6 @@
 	margin-bottom: 1rem;
 }
 
-.price_card_sketch {
-	width: 60px;
-	height: 60px;
-	scale: 1;
-	transition: all 400ms ease-in-out;
-}
-
-.price-card_container:hover .commission_image {
-	filter: blur(3px);
-	-webkit-transition: 400ms ease 100ms;
-	-moz-transition: 400ms ease 100ms;
-	transition: 400ms ease 100ms;
-}
-
 .price_card_container:hover .price_tags {
 	visibility: visible;
 }
@@ -59,39 +58,58 @@
 	opacity: 0%;
 }
 
+.price_card_container:hover #overlay {
+	opacity: 90%;
+}
+
 .commission_image {
-	filter: blur(0px);
-	-webkit-filter: blur(0px);
 	position: relative;
 	width: 100%; /* or any custom size */
 	height: 100%;
 	object-fit: cover;
 	overflow: hidden;
+
 	border-radius: var(--image-border);
+	z-index: 0;
+}
+
+#overlay {
+	z-index: 1;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	opacity: 20%;
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.6),
+		rgb(0, 0, 0, 0.8)
+	);
+	transition: opacity ease-in-out;
+	transition-duration: 200ms;
 }
 
 .title-banner {
 	width: 70%;
 	opacity: 100%;
 	text-align: center;
-	position: relative;
+	position: absolute;
 	display: flex;
 	justify-content: center;
-	text-transform: uppercase;
 	overflow: hidden;
 	color: white;
 	/* object-fit: cover; */
-	margin-top: -3rem;
+	margin-top: 14rem;
 	transition: all ease-in-out;
 	transition-duration: 200ms;
-
-	background-color: var(--hover_pink);
+	z-index: 2;
 }
 
 .price_card_box {
 	/* background-color: red; */
-	position: relative;
-	margin-top: -13rem;
+	position: absolute;
+
 	align-items: center;
 	/* height: 100%; */
 	display: flex;
@@ -105,5 +123,6 @@
 }
 
 .price_tags > p {
-	color: var(--hover_pink);
+	color: white;
+	font-size: 2rem;
 }

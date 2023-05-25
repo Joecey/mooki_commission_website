@@ -1,4 +1,3 @@
-"use client";
 
 import StandardImageList from "../components/port_images";
 

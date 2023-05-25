@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Raleway:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 :root {
 	--main_pink: #b7838e;
 	--hover_pink: #803054;
@@ -66,7 +66,8 @@ h1 {
 h2 {
 	text-align: center;
 	font-size: 2.3rem;
-	font-family: "Cabin", sans-serif;
+	/* font-family: "Cabin", sans-serif; */
+	font-family: "Pacifico", cursive;
 	color: var(--font_colour);
 	margin-top: 2rem;
 	margin-bottom: 1rem;
