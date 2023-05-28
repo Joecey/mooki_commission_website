@@ -28,8 +28,8 @@
 	justify-content: center;
 
 	align-items: center;
-	height: 300px;
-	width: 525px;
+	height: 16rem;
+	width: 28rem;
 	margin-top: 1rem;
 
 	margin-left: 1rem;
@@ -91,7 +91,7 @@
 }
 
 .title-banner {
-	width: 70%;
+	width: auto;
 	opacity: 100%;
 	text-align: center;
 	position: absolute;
@@ -99,8 +99,9 @@
 	justify-content: center;
 	overflow: hidden;
 	color: white;
+	font-size: 1.8rem;
 	/* object-fit: cover; */
-	margin-top: 14rem;
+	margin-top: 13rem;
 	transition: all ease-in-out;
 	transition-duration: 200ms;
 	z-index: 2;

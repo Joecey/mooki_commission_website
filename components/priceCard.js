@@ -7,7 +7,7 @@ import Link from "next/link";
 // have a props object to take in 1) product name, 2) descriptions and prices
 export default function PriceCard(props) {
 	// get mouse movement when hovering over price_card_container class
-	const id = "example";
+	const id = props.Linkname;
 	return (
 		<Link href={`/commission/${id}`} className={props.cardClass}>
 			<div id="overlay"></div>

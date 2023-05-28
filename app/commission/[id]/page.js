@@ -1,3 +1,5 @@
-export default function commissionDetails() {
-	return <h3>Welcome to commission details</h3>;
+export default function commissionDetails({ params }) {
+	const commissionType = params.id;
+
+	return <h3>Welcome to commission details ({commissionType})</h3>;
 }

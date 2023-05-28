@@ -8,7 +8,11 @@ import MOOKI from "../assets/images/mooki-intro.png";
 export default function AboutDesc() {
 	return (
 		<div className="intro-flex">
-			<Image className="text-image" src={MOOKI} alt="test" />
+			<Image
+				className="text-image fade-in-short"
+				src={MOOKI}
+				alt="test"
+			/>
 			<div className="description">
 				<h2>Hey There!</h2>
 				<p>
