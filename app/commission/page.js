@@ -22,7 +22,6 @@ export default function CommissionPage() {
 							Full body: £40 ($48)
 						</Fragment>
 					}
-					cardClass="fade-in price_card_container"
 				/>
 				<PriceCard
 					title="Full Colour"
@@ -35,7 +34,6 @@ export default function CommissionPage() {
 							Full body: £95 ($114)
 						</Fragment>
 					}
-					cardClass="fade-in-alt price_card_container"
 				/>
 			</div>
 
@@ -49,7 +47,6 @@ export default function CommissionPage() {
 							<br></br>Coloured: £230 ($286)
 						</Fragment>
 					}
-					cardClass="fade-in price_card_container"
 				/>
 				<PriceCard
 					title="Emotes"
@@ -62,7 +59,6 @@ export default function CommissionPage() {
 							Fifteen emotes: £82 ($102)
 						</Fragment>
 					}
-					cardClass="fade-in-alt price_card_container"
 				/>
 			</div>
 
@@ -78,7 +74,6 @@ export default function CommissionPage() {
 							Full body: £40 ($48)
 						</Fragment>
 					}
-					cardClass="fade-in price_card_container"
 				/>
 				<PriceCard
 					title="Vtuber Rig"
@@ -91,7 +86,6 @@ export default function CommissionPage() {
 							Full body: £35 ($38)
 						</Fragment>
 					}
-					cardClass="fade-in-alt price_card_container"
 				/>
 			</div>
 
@@ -107,7 +101,6 @@ export default function CommissionPage() {
 							Full body: £40 ($48)
 						</Fragment>
 					}
-					cardClass="fade-in price_card_container"
 				/>
 			</div>
 		</div>

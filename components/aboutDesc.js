@@ -9,11 +9,11 @@ export default function AboutDesc() {
 	return (
 		<div className="intro-flex">
 			<Image
-				className="text-image fade-in-short"
+				className="text-image translate-fade"
 				src={MOOKI}
 				alt="test"
 			/>
-			<div className="description">
+			<div className="description translate-fade">
 				<h2>Hey There!</h2>
 				<p>
 					Get ready to immerse yourself in the breathtaking world of

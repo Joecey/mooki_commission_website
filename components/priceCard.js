@@ -9,7 +9,10 @@ export default function PriceCard(props) {
 	// get mouse movement when hovering over price_card_container class
 	const id = props.Linkname;
 	return (
-		<Link href={`/commission/${id}`} className={props.cardClass}>
+		<Link
+			href={`/commission/${id}`}
+			className="comm-fade price_card_container"
+		>
 			<div id="overlay"></div>
 			<Image
 				src={EXAMPLE}
