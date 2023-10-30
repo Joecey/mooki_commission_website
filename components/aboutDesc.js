@@ -1,6 +1,6 @@
 // `use client`;
 import React from "react";
-import "./descriptions.css";
+import "./styles/descriptions.css";
 import Image from "next/image";
 import MOOKI from "../assets/images/mooki-intro.png";
 
@@ -8,8 +8,12 @@ import MOOKI from "../assets/images/mooki-intro.png";
 export default function AboutDesc() {
 	return (
 		<div className="intro-flex">
-			<Image className="text-image" src={MOOKI} alt="test" />
-			<div className="description">
+			<Image
+				className="text-image translate-fade"
+				src={MOOKI}
+				alt="test"
+			/>
+			<div className="description translate-fade">
 				<h2>Hey There!</h2>
 				<p>
 					Get ready to immerse yourself in the breathtaking world of

@@ -3,6 +3,10 @@ const nextConfig = {
 	experimental: {
 		appDir: true,
 	},
+
+	images: {
+		domains: ["cdnb.artstation.com"],
+	},
 };
 
 module.exports = nextConfig;

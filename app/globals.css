@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600&display=swap");
 
 :root {
 	--main_pink: #b7838e;
+	--main_yellow: #ffcbab;
 	--hover_pink: #803054;
 	--font_colour: white;
+	--card_colour: #eeb6b6;
 }
 
 * {
@@ -12,11 +17,50 @@
 	user-select: none;
 }
 
+/* use for fading in elements */
+.fade-in-shorter {
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+.fade-in-short {
+	animation: fadeIn 0.4s ease-in-out;
+}
+
+.translate-fade {
+	animation: animateX 1s;
+}
+
+.fade-in {
+	animation: fadeIn 1.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes animateX {
+	0% {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translateX(-100%);
+	}
+	100% {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateX(0);
+	}
+}
+
 html,
 body {
 	padding: 0;
 	margin: 0;
-	background-color: var(--main_pink);
+	background: linear-gradient(var(--main_pink), var(--main_yellow));
 	/* list font priority */
 	font-family: "Raleway", sans-serif, BlinkMacSystemFont, Segoe UI, Roboto,
 		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
@@ -26,7 +70,11 @@ body {
 
 #main_title {
 	padding: 0 0;
+	width: 100vw;
 	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 h1 {
@@ -39,15 +87,34 @@ h1 {
 h2 {
 	text-align: center;
 	font-size: 2.3rem;
-	font-family: "Cabin", sans-serif;
+	/* font-family: "Cabin", sans-serif; */
+	font-family: "Pacifico", cursive;
 	color: var(--font_colour);
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 }
 
+h3 {
+	text-align: center;
+	font-size: 1.6rem;
+	font-family: "Poppins", sans-serif;
+	color: #ffffff;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+h4 {
+	text-align: center;
+	font-size: 1.2rem;
+
+	color: white;
+	margin-top: 1rem;
+}
+
 p {
 	text-align: center;
 	font-size: 1.1rem;
+	font-family: "Poppins", sans-serif;
 	color: var(--font_colour);
 }
 
@@ -60,7 +127,7 @@ a {
 
 main {
 	min-height: 100vh;
-	padding: 3rem 0;
+	padding: 2.5rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -87,8 +154,11 @@ nav a {
 
 #navbar {
 	/* background-color: var(--main_pink); */
-	/* width: 100%; */
+	width: 100vw;
 	height: 3vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 nav a:hover {
