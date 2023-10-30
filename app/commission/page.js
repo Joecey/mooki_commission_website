@@ -1,107 +1,76 @@
 import { Fragment } from "react";
 import PriceCard from "../../components/priceCard";
 import "../../components/styles/commissions.css";
+import Link from "next/link";
+import Image from "next/image";
+
+// static images need to be loading from /public
+const vgenPage = "/vgen-landing-page.png";
 
 export default function CommissionPage() {
 	return (
 		<div>
 			<h4>
-				Before discussing a commission, please refer to my Terms of
-				Service!
+				(Before discussing a commission, please refer to my{" "}
+				<Link href="/about" className="hover-link">
+					Terms of Service!
+				</Link>
+				)
 			</h4>
+			<h2>How it Works</h2>
+			<div className="commission-step-container">
+				<div className="image-container">
+					<img
+						src={vgenPage}
+						alt="Mooki VGen Page"
+						className="image-container"
+					/>
+				</div>
 
-			<div className="price-cards-group">
-				<PriceCard
-					title="Sketch"
-					Linkname="sketch"
-					prices={
-						<Fragment>
-							Headshot: £15 ($18)
-							<br></br>Waist up: £25 ($30)
-							<br></br>
-							Full body: £40 ($48)
-						</Fragment>
-					}
-				/>
-				<PriceCard
-					title="Full Colour"
-					Linkname="full-colour"
-					prices={
-						<Fragment>
-							Headshot: £40 ($48)
-							<br></br>Waist up: £66 ($79.50)
-							<br></br>
-							Full body: £95 ($114)
-						</Fragment>
-					}
-				/>
+				<div className="explanation-container">
+					<h3>Step 1: Visit My VGen page</h3>
+					<p>
+						Visit my VGen page to have a look at my previous work
+						and clients
+					</p>
+				</div>
 			</div>
 
-			<div className="price-cards-group">
-				<PriceCard
-					title="Full Coloured Splash Art"
-					Linkname="full-colour-splash-art"
-					prices={
-						<Fragment>
-							Grayscale: £70 ($84)
-							<br></br>Coloured: £230 ($286)
-						</Fragment>
-					}
-				/>
-				<PriceCard
-					title="Emotes"
-					Linkname="emotes"
-					prices={
-						<Fragment>
-							Single emote: £8 ($9)
-							<br></br>Five emotes: £32 ($38)
-							<br></br>
-							Fifteen emotes: £82 ($102)
-						</Fragment>
-					}
-				/>
+			<div className="commission-step-container">
+				<div className="explanation-container">
+					<h3>Step 2: Send in your references</h3>
+					<p>
+						Choose your images, be descriptive as possible, give me
+						as much as possible to work with
+					</p>
+				</div>
+
+				<div className="image-container">
+					<img
+						src={vgenPage}
+						alt="Mooki VGen Page"
+						className="image-container"
+					/>
+				</div>
 			</div>
 
-			<div className="price-cards-group">
-				<PriceCard
-					title="Vtuber Model Art"
-					Linkname="vtuber-model-art"
-					prices={
-						<Fragment>
-							Headshot: £15 ($18)
-							<br></br>Waist up: £25 ($30)
-							<br></br>
-							Full body: £40 ($48)
-						</Fragment>
-					}
-				/>
-				<PriceCard
-					title="Vtuber Rig"
-					Linkname="vtuber-rig"
-					prices={
-						<Fragment>
-							Headshot: £14 ($16)
-							<br></br>Waist up: £25 ($30)
-							<br></br>
-							Full body: £35 ($38)
-						</Fragment>
-					}
-				/>
-			</div>
+			<div className="commission-step-container">
+				<div className="image-container">
+					<img
+						src={vgenPage}
+						alt="Mooki VGen Page"
+						className="image-container"
+					/>
+				</div>
 
-			<div className="price-cards-group">
-				<PriceCard
-					title="V-Rigged Pet/Companion"
-					Linkname="vtuber-companion"
-					prices={
-						<Fragment>
-							Headshot: £15 ($18)
-							<br></br>Waist up: £25 ($30)
-							<br></br>
-							Full body: £40 ($48)
-						</Fragment>
-					}
-				/>
+				<div className="explanation-container">
+					<h3>Step 3: Let the magic happen!</h3>
+					<p>
+						I'll provide you with an estimated completion time.
+						While you wait, I'll provide weekly updates and windows
+						where you can ask for changes
+					</p>
+				</div>
 			</div>
 		</div>
 	);

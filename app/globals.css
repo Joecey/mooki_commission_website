@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Raleway:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600&display=swap");
+
 :root {
 	--main_pink: #b7838e;
+	--main_yellow: #ffcbab;
 	--hover_pink: #803054;
 	--font_colour: white;
 	--card_colour: #eeb6b6;
@@ -56,7 +60,7 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	background-color: var(--main_pink);
+	background: linear-gradient(var(--main_pink), var(--main_yellow));
 	/* list font priority */
 	font-family: "Raleway", sans-serif, BlinkMacSystemFont, Segoe UI, Roboto,
 		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
@@ -93,15 +97,15 @@ h2 {
 h3 {
 	text-align: center;
 	font-size: 1.6rem;
-
-	color: var(--hover_pink);
+	font-family: "Poppins", sans-serif;
+	color: #ffffff;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
 
 h4 {
 	text-align: center;
-	font-size: 1rem;
+	font-size: 1.2rem;
 
 	color: white;
 	margin-top: 1rem;
@@ -110,6 +114,7 @@ h4 {
 p {
 	text-align: center;
 	font-size: 1.1rem;
+	font-family: "Poppins", sans-serif;
 	color: var(--font_colour);
 }
 
