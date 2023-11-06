@@ -1,0 +1,41 @@
+.flexCol {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+}
+
+.flexRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.socialTitle {
+	font-size: 2.5rem;
+	margin: 1rem;
+}
+
+.linkText {
+	/* background-color: red; */
+	font-size: 30px;
+}
+
+.icon {
+	margin-left: 1rem;
+	width: 32px;
+	color: white !important;
+	/* background-color: red; */
+}
+
+.socialBar {
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	/* border-radius: 40px; */
+	aspect-ratio: 5 / 1;
+	margin: 0.5rem;
+	background-color: #fab990;
+	filter: drop-shadow(8px 8px 0px #bc7a88);
+}
