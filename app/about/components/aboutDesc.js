@@ -1,19 +1,28 @@
-// `use client`;
+"use client";
 import React from "react";
-import "./styles/descriptions.css";
+import "/components/styles/descriptions.css";
 import Image from "next/image";
-import MOOKI from "../assets/images/mooki-intro.png";
+import MOOKI from "/assets/images/mooki-intro.png";
+import { motion } from "framer-motion";
 
 //TODO make this reuseable > reuseable text and image
 export default function AboutDesc() {
 	return (
-		<div className="intro-flex">
+		<motion.div
+			className="intro-flex"
+			initial={{ opacity: 0, x: -100 }}
+			animate={{ opacity: 1, x: 0 }}
+			transition={{
+				duration: 0.5,
+				ease: "easeOut",
+			}}
+		>
 			<Image
-				className="text-image translate-fade"
+				className="text-image"
 				src={MOOKI}
-				alt="test"
+				alt="Mooki drawing portrait"
 			/>
-			<div className="description translate-fade">
+			<div className="description">
 				<h2>Hey There!</h2>
 				<p>
 					Get ready to immerse yourself in the breathtaking world of
@@ -37,6 +46,6 @@ export default function AboutDesc() {
 					Contact me! <strong>harlzeyyy@gmail.com</strong>
 				</p>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

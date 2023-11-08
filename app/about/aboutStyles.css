@@ -6,8 +6,10 @@
 
 .flexRow {
 	display: flex;
+	position: relative;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 }
 
 .socialTitle {
@@ -17,25 +19,37 @@
 
 .linkText {
 	/* background-color: red; */
-	font-size: 30px;
+	font-size: 1.2rem;
 }
 
 .icon {
 	margin-left: 1rem;
-	width: 32px;
+	width: 1.5rem;
 	color: white !important;
 	/* background-color: red; */
 }
 
 .socialBar {
-	width: 400px;
+	width: clamp(100px, 20rem, 400px);
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	align-items: center;
-	/* border-radius: 40px; */
-	aspect-ratio: 5 / 1;
+	border-radius: 40px;
+
 	margin: 0.5rem;
 	background-color: #fab990;
 	filter: drop-shadow(8px 8px 0px #bc7a88);
+}
+
+.social-image-container {
+	margin: 2rem;
+	margin-left: 8rem;
+	width: 40rem;
+	aspect-ratio: 5 / 3;
+	background-color: #bc7a88;
+	border-radius: 1rem;
+	filter: drop-shadow(8px 8px 10px var(--card_colour));
+	background-image: url("https://cdnb.artstation.com/p/assets/images/images/061/909/081/large/mooki_-rsz-1harley-dawson-splash-art.jpg?1681908142");
+	background-size: cover;
 }
