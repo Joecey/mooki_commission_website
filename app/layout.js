@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./blobsStyle.css";
 
 // use this to create our nav bar
 
@@ -16,7 +17,10 @@ export default function RootLayout({ children }) {
 	return (
 		<html>
 			<body>
+				<div id="orange-blur-blob" className="orange-blob"></div>
+				<div id="pink-blur-blob" className="pink-blob"></div>
 				<main>
+					{/* we are going to define some blur blobs here  */}
 					<div id="main_title">
 						<h1>Mooki</h1>
 					</div>

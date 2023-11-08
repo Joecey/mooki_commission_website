@@ -1,0 +1,27 @@
+:root {
+	--alt_pink: #cc9896;
+}
+
+.orange-blob {
+	position: absolute;
+	background-color: var(--main_yellow);
+	border-radius: 20rem;
+	width: 60rem;
+	aspect-ratio: 1 / 1;
+	top: -6rem;
+	right: -6rem;
+	z-index: -8;
+	filter: blur(10rem);
+}
+
+.pink-blob {
+	position: absolute;
+	background-color: var(--alt_pink);
+	border-radius: 20rem;
+	width: 80rem;
+	aspect-ratio: 1 / 1;
+	top: -6rem;
+	left: -6rem;
+	z-index: -10;
+	filter: blur(10rem);
+}

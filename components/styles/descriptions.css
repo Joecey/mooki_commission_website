@@ -1,5 +1,5 @@
 .text-image {
-	width: 450px;
+	width: clamp(200px, 50%, 450px);
 	height: auto;
 	aspect-ratio: 1 / 1;
 	padding: 1.5rem;
@@ -12,6 +12,7 @@
 	align-items: center;
 	justify-content: center;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .description {
@@ -19,7 +20,7 @@
 	position: relative;
 	/* top: 0.6rem; */
 	padding-right: 2rem;
-	width: 40%;
+	width: clamp(500px, 40%, 800px);
 }
 
 .description > h2 {
